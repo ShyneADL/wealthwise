@@ -1,4 +1,4 @@
-import { apple, bill, google, stocks } from "../assets";
+import { apple, google, stocks } from "../assets";
 import styles, { layout } from "../style";
 
 const Billing = () => (
@@ -14,13 +14,10 @@ const Billing = () => (
 
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Easily control your <br className="sm:block hidden" /> billing &
-        invoicing
+        Easily make trades and manage <br className="sm:block hidden" /> your portfolio on the go
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
-        aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
-        placerat.
+        Gain access to the full features of our platform in the palm of your hand for free.
       </p>
 
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
