@@ -1,6 +1,7 @@
 import styles from "../style";
-import { discount, robot } from "../assets";
+import { discount } from "../assets";
 import GetStarted from "./GetStarted";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -21,9 +22,11 @@ const Hero = () => {
           <p className={`${styles.paragraph} text-neutral-900 text-center items-center max-w-[770px] mt-5 mb-12`}>
           We are your partners in making informed investment decisions and building a secure future through strategic savings. Our platform is your guide to unlocking the potential of your money and navigating the world of finance with confidence.
         </p>
-          <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
-          </div>
+          <Link to="/sign-up" >
+            <div className="ss:flex hidden md:mr-4 mr-0">
+                <GetStarted />
+            </div>
+          </Link>
         </div>
 
        

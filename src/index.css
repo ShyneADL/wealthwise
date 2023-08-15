@@ -152,26 +152,27 @@
 .bg__main {
   background-color: #fff;
 }
-/* .gs-btn {
-  animation: transform .3s linear;
-  animation-fill-mode: forwards;
+
+
+/* Form styles */
+
+.login-body {
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.gs-btn:hover {
-  transform: scale(1.1);
-}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-color: #0e4166;
+  background-image: linear-gradient(to bottom, rgba(84, 101, 255, 1) 0%, rgba(0, 188, 212, 1) 90%, rgba(124, 181, 24, 0.63) 100%);
+  z-index: -12;
 
-@-webkit-keyframes transform  {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-  }
-  100% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-} */
+}

@@ -1,33 +1,22 @@
-import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import React from 'react';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Index from './Index.jsx';
+import Login from './Login';
+import SignUp from './SignUp.jsx';
 
-const App = () => (
-  <div className="bg__main w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Navbar />
-      </div>
-    </div>
+const App = () => {
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Index />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/sign-up' element={<SignUp />}></Route>
+        </Routes>
 
-    <div className={`bg__main ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
-      </div>
+      </BrowserRouter>
     </div>
-    
-    <div className={`bg__main ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Stats />
-        <Business />
-        <Billing />
-        <CardDeal />
-        <Clients />
-        <Testimonials />
-        <CTA />
-        <Footer />
-      </div>
-    </div>
-  </div>
-);
+  )
+}
 
 export default App;

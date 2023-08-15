@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
@@ -28,8 +29,9 @@ const Business = () =>  (
          Our platform uses advanced analytics
       to match your financial goals and risk profile with the right investments, helping you make decisions that align with your aspirations.
       </p>
-
-      <Button styles={`mt-10`} />
+      <Link to='/sign-up'>
+        <Button styles={`mt-10`} />
+      </Link>
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>

@@ -1,6 +1,7 @@
 import { revenue } from "../assets";
 import styles, { layout } from "../style";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const CardDeal = () => (
   <section className={layout.section}>
@@ -13,7 +14,9 @@ const CardDeal = () => (
       Our intuitive design empowers you to navigate intricate financial data effortlessly.
       </p>
 
-      <Button styles={`mt-10`} />
+      <Link to='/sign-up'>
+        <Button styles={`mt-10`} />
+      </Link>
     </div>
 
     <div className={layout.sectionImg}>
