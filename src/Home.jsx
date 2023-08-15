@@ -1,7 +1,7 @@
 import styles from "./style";
 import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
 
-const Index = () => (
+const Home = () => (
   <div className="bg__main w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
@@ -30,4 +30,4 @@ const Index = () => (
   </div>
 );
 
-export default Index;
+export default Home;
