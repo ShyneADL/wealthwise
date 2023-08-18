@@ -59,7 +59,7 @@ const SignUpForm = () => {
   return (
     <div className="login-root">
     <div className="box-root flex-flex flex-direction--column" style={{minHeight: '100vh', flexGrow: '1',}}>
-      <div className="box-root pt-6 flex-flex flex-direction--column" style={{flexGrow: 1, zIndex: 9,}}>
+      <div className="box-root sm:pt-6 xs:pt-0 flex-flex flex-direction--column" style={{flexGrow: 1, zIndex: 9,}}>
         <div className="formbg-outer">
           <div className="formbg">
             <div className="box-root pt-6 px-6 flex justify-center Content--center">
