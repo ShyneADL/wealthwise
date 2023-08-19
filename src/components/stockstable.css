@@ -27,3 +27,8 @@ button:disabled {
 
     
 }
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 4px;
+  }
