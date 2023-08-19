@@ -13,7 +13,7 @@ const CTA = () => (
 
     <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
     <Link to='/sign-up'>
-      <Button styles={`mt-10`} />
+      <Button text={"Get Started"} styles={`mt-10`} />
     </Link>
     </div>
   </section>

@@ -1,0 +1,21 @@
+.table-style {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    scroll-behavior: smooth;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.table-style::-webkit-scrollbar {
+    display: none;
+}
+
+button:disabled {
+    color: grey;
+    background-color: white;
+}
+
+.btn {
+    background: aqua;
+}

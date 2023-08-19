@@ -30,7 +30,7 @@ const Business = () =>  (
       to match your financial goals and risk profile with the right investments, helping you make decisions that align with your aspirations.
       </p>
       <Link to='/sign-up'>
-        <Button styles={`mt-10`} />
+        <Button text={"Get Started"} styles={`mt-10`} />
       </Link>
     </div>
 

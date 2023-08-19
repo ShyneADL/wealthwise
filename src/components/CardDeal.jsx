@@ -7,15 +7,14 @@ const CardDeal = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-       Seamless Experience, Precise Results <br className="sm:block hidden" />
+      Discover Advanced Tools <br className="sm:block hidden" /> for Stock Analysis
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-      At WealthWise, we've crafted an interface that seamlessly blends accuracy and user-friendliness. 
-      Our intuitive design empowers you to navigate intricate financial data effortlessly.
+      Experience a comprehensive suite of tools designed to provide deep insights into the stock market. Whether you're an experienced investor or just beginning your journey, our platform offers a range of features to empower you with the information you need to make informed decisions.
       </p>
 
-      <Link to='/sign-up'>
-        <Button styles={`mt-10`} />
+      <Link to='/stocks'>
+        <Button text={"View Stocks"} styles={`mt-10`} />
       </Link>
     </div>
 

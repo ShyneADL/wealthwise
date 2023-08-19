@@ -1,5 +1,6 @@
-import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import styles from "../style";
+import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "../components";
+import Stocks from './Stocks'
 
 const Home = () => (
   <div className="bg__main w-full overflow-hidden">
