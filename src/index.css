@@ -177,6 +177,12 @@ svg {
 
 }
 
+@media screen and (max-width: 450px) {
+  svg {
+    height: 876px;
+  }
+}
+
 table {
   border-collapse: separate;
   border-spacing: 0 4px;

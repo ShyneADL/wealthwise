@@ -11,7 +11,6 @@ const SignUpForm = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
   const validateForm = () => {
     const newErrors = {};

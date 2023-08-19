@@ -4,7 +4,7 @@ import { LoginForm } from '../components';
 
 const Login = () => {
   return (
-    <div>
+    <div className='h-[760px]'>
       <LoginBody />
       <LoginForm />
     </div>
