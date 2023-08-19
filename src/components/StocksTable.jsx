@@ -46,7 +46,7 @@ const StocksTable = () => {
         datatype: 'json'
       },
       headers: {
-        'X-RapidAPI-Key': '4b5fdeaf15mshc8f262ae8aac7a6p174e1bjsn95b9eb012e39',
+        'X-RapidAPI-Key': import.meta.env.VITE_SOME_KEY,
         'X-RapidAPI-Host': 'alpha-vantage.p.rapidapi.com'
       }
     };
