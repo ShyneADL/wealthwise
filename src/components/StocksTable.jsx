@@ -63,7 +63,6 @@ const StocksTable = () => {
 const lastIndex = currentPage * itemsPerPage;
 const firstIndex = lastIndex - itemsPerPage;
 const displayedData = historicalData ? Object.entries(historicalData).slice(firstIndex, lastIndex) : [];
-const finalPage = Object.entries(historicalData).length / itemsPerPage;
 
   
   const handleInputChange = (e) => {
@@ -135,7 +134,7 @@ const finalPage = Object.entries(historicalData).length / itemsPerPage;
               >
                 Previous
               </button>
-              <p>{currentPage} of {finalPage}</p>
+              <p>{currentPage} of 5</p>
               <button
                 disabled={currentPage === 5}
                 onClick={() => setCurrentPage(currentPage + 1)}
