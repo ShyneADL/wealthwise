@@ -63,6 +63,7 @@ const StocksTable = () => {
 const lastIndex = currentPage * itemsPerPage;
 const firstIndex = lastIndex - itemsPerPage;
 const displayedData = historicalData ? Object.entries(historicalData).slice(firstIndex, lastIndex) : [];
+const finalPage = Object.entries(historicalData).length / itemsPerPage;
 
   
   const handleInputChange = (e) => {
@@ -76,23 +77,22 @@ const displayedData = historicalData ? Object.entries(historicalData).slice(firs
     await fetchData();
   };
 
-  // const handleSearch = (e) => setSymbol(e.target.value) && setCurrentPage(1);
   
 
 
   return (
-    <div>
+    <div className='mx-2'>
       <div className={`${styles.marginY} flex flex-col justify-between items-center w-full`}>
           <h1 className="flex-1 text-center font-poppins font-semibold ss:text-[40px] xs:text-[28px] text-[64px] text-neutral-900 ss:leading-[65.8px] xs:leading-[50.8px] leading-[75px]">Historical Stock Data for {symbol.toUpperCase()}</h1>
-          <form onSubmit={handleFormSubmit} className='w-80%'>
+          <form onSubmit={handleFormSubmit} className={`ss:w-[60%] xs:w-full flex mt-6 flex-1 ${styles.flexCenter}`}>
             <input
               type="text"
               placeholder="Enter a stock symbol e.g AAPL, TSLA"
               value={inputValue}
               onChange={handleInputChange}
-              className={`w-[60%] p-2 flex-1 sm:mt-6 border-2 border-black rounded-l-md  font-poppins font-normal text-neutral-700 ss:text-[20px] text-[24px] leading-[30.8px]`}
+              className={`p-2 h-[56px] flex-1 xs:w-[40%] border-[2.5px] border-black rounded-l-md  font-poppins font-normal text-neutral-700 ss:text-[20px] text-[24px] leading-[30.8px]`}
             />
-            <button className='bg-black text-white py-[13.5px] rounded-r-md' type='submit'>Load Quote</button>
+            <button className='bg-black h-[56px] flex-[0.5] outline-none border-none text-white ss:w-[60px] xs:w-[100px] py-[14px] rounded-r-md' type='submit'>Load Quote</button>
           </form>
       </div>
 
@@ -135,7 +135,7 @@ const displayedData = historicalData ? Object.entries(historicalData).slice(firs
               >
                 Previous
               </button>
-              <p>{currentPage} of 5</p>
+              <p>{currentPage} of {finalPage}</p>
               <button
                 disabled={currentPage === 5}
                 onClick={() => setCurrentPage(currentPage + 1)}
