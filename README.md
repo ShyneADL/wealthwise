@@ -12,21 +12,18 @@ Welcome to the Stocks Investment Web App, a React-based application that provide
 ## Getting Started
 Clone the Repository:
 
-```
-bash
+```bash
 git clone https://github.com/ShyneADL/wealthwise.git
 cd wealthwise
 ```
 Install Dependencies:
 
-```
-bash
+```bash
 npm install
 ```
 
 Run the Development Server:
-```
-bash
+```bash
 npm run dev
 ```
 
