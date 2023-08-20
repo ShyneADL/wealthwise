@@ -8,6 +8,7 @@ import Stats from "./Stats";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
+import LoginBody from "./LoginBody";
 import LoginForm from "./LoginForm";
 import SignUpForm from "./SignUpForm";
 
@@ -23,6 +24,7 @@ export {
   Footer,
   Testimonials,
   Hero,
+  LoginBody,
   LoginForm,
   SignUpForm,
 };
