@@ -7,7 +7,6 @@ const SignUpForm = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
-    confirmPassword: '',
   });
 
   const [errors, setErrors] = useState({});
