@@ -5,8 +5,11 @@ import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
+  const nav = [...new Set(navLinks.map((nav) => nav.title))]
+
+  const [active, setActive] = useState(nav[0]);
   const [toggle, setToggle] = useState(false);
+
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
@@ -52,7 +55,7 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`${nav.id}`}>{nav.title}</a>
+                <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
           </ul>
