@@ -12,7 +12,6 @@ const Navbar = () => {
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <div className="flex justify-start">
         <Link to='/'>
-
           <img src={logo} alt="wealthwise" className="w-[124px] h-[32px]" />
         </Link>
       </div>
@@ -25,7 +24,7 @@ const Navbar = () => {
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href="{`#${nav.id}`}">{nav.title}</a>
+            <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
           
         ))}
