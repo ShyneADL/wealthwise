@@ -29,12 +29,6 @@ const StocksTable = () => {
     handleScroll();
   }, []);
 
-  useEffect(() => {
-    if (symbol) {
-      fetchData();
-    }
-  }, [symbol, currentPage]);
-
   const fetchData = async () => {
     const options = {
       method: 'GET',
@@ -58,6 +52,12 @@ const StocksTable = () => {
       console.error(error);
     }
   };
+
+  useEffect(() => {
+    if (symbol) {
+      fetchData();
+    }
+  }, [symbol, currentPage]);
 
  // Slice data based on pagination
 const lastIndex = currentPage * itemsPerPage;
